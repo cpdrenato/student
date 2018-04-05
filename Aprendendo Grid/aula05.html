@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	  <meta name="robots" content="noindex, nofollow">
+	  <meta name="googlebot" content="noindex, nofollow">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Masonry em jQuery</title>
+	<link rel="stylesheet" type="text/css" href="#">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-2.1.0.js"></script>
+  
+      <link rel="stylesheet" type="text/css" href="https://rawgit.com/desandro/masonry/master/test/tests.css">
+	<style type="text/css">
+	body {
+	  background: #fff;
+	}
+	    .item { width: 200px; color:#fff; font-size: 22px;}
+	.maior {height: 80px;}
+  </style>
+</head>
+<body>
+	<script type='text/javascript'>//<![CDATA[
+		$(window).load(function(){
+		$('.grid').masonry({
+		  // options
+		  itemSelector: '.item',
+		  columnWidth: 200
+		});
+		});//]]> 
+
+	</script>
+
+	<div class="grid">
+	    <div class="item">1</div>
+	    <div class="item maior">2</div>
+	    <div class="item">3</div>
+	    
+	    <div class="item maior">4</div>
+	    <div class="item">5</div>
+	    <div class="item">6</div>
+	    
+	    <div class="item maior">7</div>
+	    <div class="item">8</div>
+	    <div class="item maior">9</div>
+	</div>
+
+	<script>
+  // tell the embed parent frame the height of the content
+  if (window.parent && window.parent.parent){
+    window.parent.parent.postMessage(["resultsFrame", {
+      height: document.body.getBoundingClientRect().height,
+      slug: "rgzsxayn"
+    }], "*")
+  }
+</script>
+
+</body>
+</html>

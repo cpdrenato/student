@@ -1,0 +1,44 @@
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content: '.';
+  display: block;
+  clear: both;
+  width: 100%;
+  height: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+.pagina {
+  max-width: 1000px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.conteudo {
+  float: left;
+  /* Apenas para nosso exemplo */
+ 
+  width: 64%;
+}
+.lateral {
+  float: left;
+  width: 36%;
+}
+.conteudo-interno {
+  background: yellow; 
+  margin: 15px;
+}
+.lateral-interno {
+  margin: 15px;
+  /* Apenas para nosso exemplo */
+  background: purple;
+}
+/* Apenas para nosso exemplo */
+.conteudo-interno, .lateral-interno {
+  height: 300px;
+}
